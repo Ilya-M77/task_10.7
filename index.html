@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row game-card align-items-center">
+            <div class="col col-md-4 offset-md-4">
+                <div class="card text-center card text-white bg-primary mb-3">
+                    <div class="card-header">
+                        <p class="m-0"><span id="orderNumberField"></span></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <h5 class="card-title m-0"><span id="answerField"></span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="btn-group">
+                            <button class="m-1 rounded-pill btn btn-dark" id="btnLess">&#129047;<br>меньше</button>
+                            <button class="m-1 rounded-pill btn btn-success btn-lg " id="btnEqual">Верно!</button>
+                            <button class="m-1 rounded-pill btn btn-dark" id="btnOver">больше<br>&#129045;</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><span class="text-white"
+                                id="userNumber"></p>
+                        <input type="number" class="rounded-pill form-control form-control-sm" min=-999 max=999 id="userInputMin"
+                            placeholder="введите минимальное число до -999">
+                        <input type="number" class="mt-2 rounded-pill form-control form-control-sm" min=-999 max=999 id="userInputMax"
+                            placeholder="введите максимальное число до 999">
+                    </div>
+                    <div>
+                        <p><button class="btn btn-danger rounded-pill" id="btnStart">Поехали</button></p>
+                    </div>
+                    <div class="card-footer card text-center">
+                        <button class="btn btn-warning" id="btnRetry">Попробовать еще раз</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

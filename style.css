@@ -1,0 +1,12 @@
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+
+label {
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+
+
